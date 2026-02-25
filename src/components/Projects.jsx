@@ -75,7 +75,7 @@ export default function Projects() {
     const { primaryColor } = useTheme();
 
     return (
-        <section id="projects" className="py-28 px-6 relative overflow-hidden">
+        <section id="projects" className="py-36 px-6 md:px-12 relative overflow-hidden">
             <div
                 className="absolute bottom-0 left-0 w-1/2 h-1/2 pointer-events-none opacity-10 blur-3xl"
                 style={{ background: `radial-gradient(circle, ${primaryColor} 0%, transparent 70%)` }}
@@ -85,7 +85,7 @@ export default function Projects() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-[1400px] mx-auto px-8 md:px-12"
+                className="max-w-[1600px] w-full mx-auto px-8 md:px-12"
             >
                 <motion.div variants={cardVariants} className="mb-16">
                     <span className="section-label mb-3 block">03 — Projects</span>

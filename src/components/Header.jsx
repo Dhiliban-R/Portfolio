@@ -36,7 +36,7 @@ export default function Header() {
                 transition: 'background 500ms ease-in-out, backdrop-filter 500ms ease-in-out, border-bottom 500ms ease-in-out',
             }}
         >
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="max-w-[1600px] w-full mx-auto flex items-center justify-between">
                 {/* Logo / Welcome */}
                 <motion.span
                     className="text-xl font-bold tracking-wide"

@@ -47,7 +47,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-28 px-6 relative overflow-hidden">
+        <section id="contact" className="py-36 px-6 md:px-12 relative overflow-hidden">
             <div
                 className="absolute top-0 right-0 w-1/3 h-1/2 pointer-events-none opacity-10 blur-3xl"
                 style={{ background: `radial-gradient(circle, ${primaryColor}, transparent)` }}

@@ -155,7 +155,7 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="max-w-[1400px] mx-auto px-8 md:px-12 w-full flex flex-col lg:flex-row justify-between items-center gap-16 pt-24 pb-16">
+            <div className="max-w-[1600px] mx-auto px-8 md:px-12 w-full flex flex-col lg:flex-row justify-between items-center gap-16 lg:gap-24 pt-24 pb-16">
                 {/* Text content */}
                 <motion.div style={{ y, opacity }} className="relative z-10 w-full lg:w-1/2">
                     <motion.div

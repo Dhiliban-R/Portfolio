@@ -24,7 +24,7 @@ export default function About() {
     const { primaryColor } = useTheme();
 
     return (
-        <section id="about" className="py-28 px-6 relative overflow-hidden">
+        <section id="about" className="py-36 px-6 md:px-12 relative overflow-hidden">
             {/* Subtle grid background */}
             <div className="absolute inset-0 pointer-events-none opacity-30"
                 style={{
@@ -38,7 +38,7 @@ export default function About() {
                 variants={containerVariants}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-[1400px] mx-auto px-8 md:px-12"
+                className="max-w-[1600px] w-full mx-auto px-8 md:px-12"
             >
                 {/* Section header */}
                 <motion.div variants={itemVariants} className="mb-16">

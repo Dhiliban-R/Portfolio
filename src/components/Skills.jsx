@@ -45,7 +45,7 @@ export default function Skills() {
     const { primaryColor } = useTheme();
 
     return (
-        <section id="skills" className="py-28 px-6 relative">
+        <section id="skills" className="py-36 px-6 md:px-12 relative">
             {/* Background accent */}
             <div
                 className="absolute top-0 right-0 w-1/2 h-1/2 pointer-events-none opacity-10 blur-3xl"
@@ -56,7 +56,7 @@ export default function Skills() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-[1400px] mx-auto px-8 md:px-12"
+                className="max-w-[1600px] w-full mx-auto px-8 md:px-12"
             >
                 {/* Header */}
                 <motion.div variants={itemVariants} className="mb-16">

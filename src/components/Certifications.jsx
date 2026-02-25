@@ -53,7 +53,7 @@ export default function Certifications() {
     const { primaryColor } = useTheme();
 
     return (
-        <section id="certifications" className="py-28 px-6 relative overflow-hidden">
+        <section id="certifications" className="py-36 px-6 md:px-12 relative overflow-hidden">
             <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 pointer-events-none opacity-8 blur-3xl"
                 style={{ background: `radial-gradient(circle, ${primaryColor}, transparent)` }}
@@ -63,7 +63,7 @@ export default function Certifications() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-[1400px] mx-auto px-8 md:px-12"
+                className="max-w-[1600px] w-full mx-auto px-8 md:px-12"
             >
                 <motion.div variants={cardVariants} className="mb-16">
                     <span className="section-label mb-3 block">04 — Certifications</span>
