@@ -131,19 +131,19 @@ export default function Hero() {
 
     return (
         <section id="home" className="relative min-h-screen flex items-center overflow-hidden" ref={containerRef}>
-            {/* Background blobs */}
+            {/* Background blobs for deeper glassmorphism refraction */}
             <div className="absolute inset-0 pointer-events-none">
                 <motion.div
-                    className="absolute top-1/4 -left-32 w-96 h-96 rounded-full opacity-20 blur-3xl"
+                    className="absolute top-1/4 -left-32 w-[500px] h-[500px] rounded-full opacity-30 blur-[100px]"
                     style={{ backgroundColor: '#0066AE' }}
-                    animate={{ scale: [1, 1.15, 1], x: [0, 20, 0] }}
-                    transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+                    animate={{ scale: [1, 1.2, 1], x: [0, 30, 0] }}
+                    transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
                 />
                 <motion.div
-                    className="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full opacity-15 blur-3xl"
+                    className="absolute bottom-1/4 -right-32 w-[450px] h-[450px] rounded-full opacity-20 blur-[100px]"
                     style={{ backgroundColor: '#14E885' }}
-                    animate={{ scale: [1, 1.2, 1], x: [0, -20, 0] }}
-                    transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+                    animate={{ scale: [1, 1.25, 1], x: [0, -30, 0] }}
+                    transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                 />
                 {/* Grid lines */}
                 <div className="absolute inset-0"
@@ -170,7 +170,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.35 }}
-                        className="text-5xl md:text-7xl font-bold leading-tight mb-4"
+                        className="text-6xl md:text-8xl font-black tracking-tight leading-tight mb-6"
                     >
                         Dhiliban{' '}
                         <span
@@ -190,7 +190,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="text-2xl font-medium text-slate-400 mb-6 h-8"
+                        className="text-xl md:text-2xl font-medium mb-8 inline-flex items-center px-4 py-2 glass-panel"
                     >
                         <TypingText />
                     </motion.div>

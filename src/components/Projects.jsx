@@ -103,9 +103,14 @@ export default function Projects() {
                         <motion.div
                             key={proj.id}
                             variants={cardVariants}
-                            whileHover={{ y: -8, scale: 1.01 }}
-                            className="glass-card overflow-hidden group relative"
-                            style={{ transition: 'all 0.3s ease' }}
+                            whileHover={{
+                                y: -12,
+                                scale: 1.02,
+                                boxShadow: `0 20px 40px -10px ${proj.color}40`,
+                                borderColor: `${proj.color}80`
+                            }}
+                            className="glass-card overflow-hidden group relative flex flex-col h-full"
+                            style={{ transition: 'all 0.4s cubic-bezier(0.22, 1, 0.36, 1)' }}
                         >
                             {/* Top accent bar */}
                             <div
@@ -124,13 +129,13 @@ export default function Projects() {
                                             {proj.emoji}
                                         </div>
                                         <div>
-                                            <h3 className="text-xl font-bold text-white">{proj.title}</h3>
-                                            <span className="text-xs" style={{ color: proj.color }}>{proj.date || 'Featured Project'}</span>
+                                            <h3 className="text-2xl font-black text-white tracking-tight mb-1 group-hover:text-glow transition-all duration-300" style={{ '--tw-glow-color': proj.color }}>{proj.title}</h3>
+                                            <span className="text-sm font-semibold tracking-wide uppercase" style={{ color: proj.color }}>{proj.date || 'Featured Project'}</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <p className="text-slate-400 leading-relaxed mb-5">{proj.description}</p>
+                                <p className="text-slate-300 text-lg leading-relaxed mb-6 flex-grow">{proj.description}</p>
 
                                 {/* Features */}
                                 <ul className="space-y-2 mb-6">
@@ -177,7 +182,7 @@ export default function Projects() {
                             {/* Hover glow overlay */}
                             <div
                                 className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500 rounded-[20px]"
-                                style={{ background: `radial-gradient(circle at 50% 0%, ${proj.color}08, transparent 60%)` }}
+                                style={{ background: `radial-gradient(circle at 50% 100%, ${proj.color}15, transparent 70%)` }}
                             />
                         </motion.div>
                     ))}

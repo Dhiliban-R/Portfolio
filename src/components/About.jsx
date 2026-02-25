@@ -43,23 +43,23 @@ export default function About() {
                 {/* Section header */}
                 <motion.div variants={itemVariants} className="mb-16">
                     <span className="section-label mb-3 block">01 — About</span>
-                    <h2 className="text-4xl md:text-5xl font-bold">Who am I?</h2>
+                    <h2 className="text-5xl md:text-6xl font-black tracking-tight">Who am I?</h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Text content */}
-                    <div className="space-y-5">
-                        <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
-                            I'm <strong className="text-white font-semibold">Dhiliban Raja</strong>, a Computer Science undergraduate
+                    <div className="space-y-6">
+                        <motion.p variants={itemVariants} className="text-slate-300 text-xl leading-relaxed">
+                            I'm <strong className="text-white font-bold">Dhiliban Raja</strong>, a Computer Science undergraduate
                             with hands-on experience building full-stack web applications using React.js, Node.js, and Firebase.
                         </motion.p>
-                        <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed">
-                            Currently pursuing my B.E. in CSE at <span style={{ color: primaryColor }} className="font-semibold transition-colors duration-500">Government College of Engineering, Salem</span> (CGPA: 7.0/10.0). I'm a Linux power user — daily driving Arch and Fedora, and recently built my own system environment using Arch Linux with Hyprland from scratch.
+                        <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
+                            Currently pursuing my B.E. in CSE at <span style={{ color: primaryColor }} className="font-bold transition-colors duration-500">Government College of Engineering, Salem</span> (CGPA: 7.0/10.0). I'm a Linux power user — daily driving Arch and Fedora, and recently built my own system environment using Arch Linux with Hyprland from scratch.
                         </motion.p>
-                        <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed">
+                        <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
                             Beyond full-stack development, I am heavily proficient in utilizing AI tools to accelerate my daily workflow. Currently, I'm diving deep into <strong className="text-white">Rust</strong> to master memory management (stacks/heaps) and achieve better computing performance compared to C.
                         </motion.p>
-                        <motion.p variants={itemVariants} className="text-slate-400 leading-relaxed">
+                        <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
                             I also serve as <strong className="text-white">NSS Incharge</strong> — leading community initiatives. When I'm free, you'll find me exploring Web3, tweaking my dotfiles, or debating with my chatbot Arthur 😎.
                         </motion.p>
 
@@ -93,7 +93,7 @@ export default function About() {
                             <motion.div
                                 key={label}
                                 variants={itemVariants}
-                                whileHover={{ scale: 1.04, y: -4 }}
+                                whileHover={{ scale: 1.08, y: -8, boxShadow: `0 20px 40px -10px ${primaryColor}40`, borderColor: `${primaryColor}80` }}
                                 className="glass-card p-6 text-center relative overflow-hidden group"
                                 style={{ transitionDelay: `${i * 0.05}s` }}
                             >

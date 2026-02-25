@@ -67,8 +67,8 @@ export default function Certifications() {
             >
                 <motion.div variants={cardVariants} className="mb-16">
                     <span className="section-label mb-3 block">04 — Certifications</span>
-                    <h2 className="text-4xl md:text-5xl font-bold">Credentials</h2>
-                    <p className="text-slate-400 mt-4 max-w-lg">
+                    <h2 className="text-5xl md:text-6xl font-black tracking-tight">Credentials</h2>
+                    <p className="text-slate-300 mt-5 text-lg max-w-lg leading-relaxed">
                         Industry-recognized certifications validating my skills and commitment to continuous learning.
                     </p>
                 </motion.div>
@@ -81,36 +81,41 @@ export default function Certifications() {
                         <motion.div
                             key={cert.id}
                             variants={cardVariants}
-                            whileHover={{ y: -8, scale: 1.02 }}
-                            className="glass-card p-6 relative group overflow-hidden"
+                            whileHover={{
+                                y: -10,
+                                scale: 1.02,
+                                boxShadow: `0 20px 40px -10px ${cert.color}30`,
+                                borderColor: `${cert.color}60`
+                            }}
+                            className="glass-card p-8 relative group overflow-hidden flex flex-col h-full"
                         >
                             {/* Top glow line */}
                             <div
-                                className="absolute top-0 left-0 right-0 h-0.5"
+                                className="absolute top-0 left-0 right-0 h-1"
                                 style={{ background: `linear-gradient(90deg, transparent, ${cert.color}, transparent)` }}
                             />
 
                             {/* Badge + org */}
-                            <div className="flex items-center gap-3 mb-5">
+                            <div className="flex items-center gap-4 mb-6">
                                 <div
-                                    className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                                    className="w-14 h-14 rounded-xl flex items-center justify-center text-3xl transition-transform duration-300 group-hover:scale-110"
                                     style={{ background: `${cert.color}15`, border: `1px solid ${cert.color}30` }}
                                 >
                                     {cert.badge}
                                 </div>
                                 <div>
                                     <div
-                                        className="text-xs font-bold tracking-wider uppercase"
+                                        className="text-xs font-bold tracking-wider uppercase mb-1"
                                         style={{ color: cert.color }}
                                     >
                                         {cert.org}
                                     </div>
-                                    <div className="text-xs text-slate-500">{cert.date}</div>
+                                    <div className="text-sm font-medium text-slate-400">{cert.date}</div>
                                 </div>
                             </div>
 
-                            <h3 className="text-base font-bold text-white mb-3 leading-snug">{cert.title}</h3>
-                            <p className="text-slate-400 text-sm leading-relaxed mb-5">{cert.description}</p>
+                            <h3 className="text-xl font-bold text-white mb-4 leading-snug group-hover:text-glow transition-all duration-300" style={{ '--tw-glow-color': cert.color }}>{cert.title}</h3>
+                            <p className="text-slate-300 text-base leading-relaxed mb-6 flex-grow">{cert.description}</p>
 
                             {/* Skills */}
                             <div className="flex flex-wrap gap-1.5 mb-5">

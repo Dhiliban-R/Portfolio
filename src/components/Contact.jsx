@@ -62,8 +62,8 @@ export default function Contact() {
             >
                 <motion.div variants={itemVariants} className="mb-16">
                     <span className="section-label mb-3 block">05 — Contact</span>
-                    <h2 className="text-4xl md:text-5xl font-bold">Let's Connect</h2>
-                    <p className="text-slate-400 mt-4 max-w-lg">
+                    <h2 className="text-5xl md:text-6xl font-black tracking-tight">Let's Connect</h2>
+                    <p className="text-slate-300 mt-5 text-lg max-w-lg leading-relaxed">
                         Got a project in mind? Want to collaborate? Or just say hi? I'm all ears. 👂
                     </p>
                 </motion.div>
@@ -125,13 +125,15 @@ export default function Contact() {
                                         onChange={(e) => setForm((f) => ({ ...f, [field]: e.target.value }))}
                                         required
                                         placeholder={field === 'name' ? 'Your name' : 'you@example.com'}
-                                        className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-slate-600 outline-none transition-all duration-200"
-                                        style={{
-                                            background: 'rgba(255,255,255,0.04)',
-                                            border: `1px solid rgba(255,255,255,0.08)`,
+                                        className="w-full px-5 py-4 rounded-xl text-base text-white placeholder-slate-500 outline-none transition-all duration-300 glass-panel"
+                                        onFocus={(e) => {
+                                            e.target.style.borderColor = primaryColor;
+                                            e.target.style.boxShadow = `0 0 20px ${primaryColor}40`;
                                         }}
-                                        onFocus={(e) => (e.target.style.borderColor = `${primaryColor}60`)}
-                                        onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.08)')}
+                                        onBlur={(e) => {
+                                            e.target.style.borderColor = 'rgba(255,255,255,0.08)';
+                                            e.target.style.boxShadow = 'none';
+                                        }}
                                     />
                                 </div>
                             ))}
@@ -144,13 +146,15 @@ export default function Contact() {
                                 onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                                 required
                                 placeholder="What's on your mind?"
-                                className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-slate-600 outline-none resize-none transition-all duration-200"
-                                style={{
-                                    background: 'rgba(255,255,255,0.04)',
-                                    border: `1px solid rgba(255,255,255,0.08)`,
+                                className="w-full px-5 py-4 rounded-xl text-base text-white placeholder-slate-500 outline-none resize-none transition-all duration-300 glass-panel"
+                                onFocus={(e) => {
+                                    e.target.style.borderColor = primaryColor;
+                                    e.target.style.boxShadow = `0 0 20px ${primaryColor}40`;
                                 }}
-                                onFocus={(e) => (e.target.style.borderColor = `${primaryColor}60`)}
-                                onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.08)')}
+                                onBlur={(e) => {
+                                    e.target.style.borderColor = 'rgba(255,255,255,0.08)';
+                                    e.target.style.boxShadow = 'none';
+                                }}
                             />
                         </div>
                         <motion.button

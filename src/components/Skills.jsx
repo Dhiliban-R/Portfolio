@@ -61,8 +61,8 @@ export default function Skills() {
                 {/* Header */}
                 <motion.div variants={itemVariants} className="mb-16">
                     <span className="section-label mb-3 block">02 — Skills</span>
-                    <h2 className="text-4xl md:text-5xl font-bold">My Tech Stack</h2>
-                    <p className="text-slate-400 mt-4 max-w-lg">
+                    <h2 className="text-5xl md:text-6xl font-black tracking-tight">My Tech Stack</h2>
+                    <p className="text-slate-300 mt-5 text-lg max-w-lg leading-relaxed">
                         A blend of languages, frameworks, and AI tools I've been sharpening.
                     </p>
                 </motion.div>
@@ -76,9 +76,14 @@ export default function Skills() {
                         <motion.span
                             key={label}
                             variants={cardVariants}
-                            whileHover={{ scale: 1.08, y: -3 }}
-                            className="px-5 py-2.5 rounded-full text-sm font-semibold border cursor-default"
-                            style={{ background: bg, borderColor: border, color: text }}
+                            whileHover={{ scale: 1.1, y: -5 }}
+                            className="px-6 py-3 rounded-full text-base font-bold border cursor-default glass-panel animate-floating"
+                            style={{
+                                background: bg,
+                                borderColor: border,
+                                color: text,
+                                animationDelay: `${Math.random() * 2}s` // Stagger the floating animation
+                            }}
                         >
                             {label}
                         </motion.span>
@@ -94,14 +99,19 @@ export default function Skills() {
                         <motion.div
                             key={name}
                             variants={itemVariants}
-                            className="glass-card p-5 group hover:glow-green transition-shadow duration-300"
+                            whileHover={{ scale: 1.02, x: 5 }}
+                            className="glass-card p-6 group transition-all duration-300 relative overflow-hidden"
+                            style={{ boxShadow: `0 4px 20px -5px ${primaryColor}20` }}
                         >
+                            {/* Hover background glow */}
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                                style={{ background: `radial-gradient(circle at 100% 50%, ${primaryColor}15, transparent 60%)` }} />
                             <div className="flex items-center justify-between mb-3">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-xl">{icon}</span>
+                                    <span className="text-2xl pt-1 drop-shadow-lg">{icon}</span>
                                     <div>
-                                        <span className="text-sm font-semibold text-white">{name}</span>
-                                        <span className="block text-xs text-slate-500">{category}</span>
+                                        <span className="text-lg font-bold text-white tracking-wide">{name}</span>
+                                        <span className="block text-sm font-medium text-slate-400 mt-0.5">{category}</span>
                                     </div>
                                 </div>
                                 <span className="text-sm font-bold" style={{ color: primaryColor }}>{level}%</span>
