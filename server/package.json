@@ -1,0 +1,20 @@
+{
+  "name": "arthur-backend",
+  "version": "1.0.0",
+  "description": "Arthur 😎 — Dhiliban's AI chatbot backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.15.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "resend": "^4.1.2"
+  }
+}
