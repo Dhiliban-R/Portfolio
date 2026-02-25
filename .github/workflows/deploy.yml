@@ -1,4 +1,4 @@
-name: Deploy Frontend to GitHub Pages
+name: Build and Deploy Portfolio
 
 on:
   push:
@@ -15,39 +15,37 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build_and_deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
       
-      - name: Setup Node
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
           
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
         
-      - name: Build
+      - name: Build Vite Application
         run: npm run build
         env:
-          # This variable will point the deployed frontend to your live backend.
-          # You can set it in GitHub Repository Settings -> Secrets and variables -> Actions -> Variables
           VITE_BACKEND_URL: ${{ vars.VITE_BACKEND_URL }}
           
-      - name: Setup Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
         
-      - name: Upload artifact
+      - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./dist"
           
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages Edge
         id: deployment
         uses: actions/deploy-pages@v4

@@ -17,7 +17,7 @@ function App() {
       <ErrorBoundary>
         <div className="relative min-h-screen" style={{ backgroundColor: '#060b14' }}>
           <Header />
-          <main>
+          <main className="flex flex-col gap-32 md:gap-48 pt-10 pb-24">
             <ErrorBoundary>
               <Hero />
             </ErrorBoundary>
