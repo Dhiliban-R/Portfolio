@@ -58,7 +58,7 @@ export default function Contact() {
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
                 variants={containerVariants}
-                className="max-w-6xl mx-auto"
+                className="max-w-[1400px] mx-auto px-8 md:px-12"
             >
                 <motion.div variants={itemVariants} className="mb-16">
                     <span className="section-label mb-3 block">05 — Contact</span>
@@ -68,7 +68,7 @@ export default function Contact() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
                     {/* Contact info */}
                     <motion.div variants={containerVariants} className="lg:col-span-2 space-y-5">
                         {CONTACT_INFO.map(({ icon, label, value, href }) => (

@@ -85,7 +85,7 @@ export default function Projects() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-6xl mx-auto"
+                className="max-w-[1400px] mx-auto px-8 md:px-12"
             >
                 <motion.div variants={cardVariants} className="mb-16">
                     <span className="section-label mb-3 block">03 — Projects</span>

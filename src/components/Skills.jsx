@@ -56,7 +56,7 @@ export default function Skills() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-6xl mx-auto"
+                className="max-w-[1400px] mx-auto px-8 md:px-12"
             >
                 {/* Header */}
                 <motion.div variants={itemVariants} className="mb-16">
@@ -93,7 +93,7 @@ export default function Skills() {
                 {/* Skill bars */}
                 <motion.div
                     variants={containerVariants}
-                    className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
                 >
                     {SKILLS.map(({ name, level, category, icon }, i) => (
                         <motion.div

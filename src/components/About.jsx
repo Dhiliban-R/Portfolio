@@ -38,7 +38,7 @@ export default function About() {
                 variants={containerVariants}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-6xl mx-auto"
+                className="max-w-[1400px] mx-auto px-8 md:px-12"
             >
                 {/* Section header */}
                 <motion.div variants={itemVariants} className="mb-16">
@@ -46,9 +46,9 @@ export default function About() {
                     <h2 className="text-5xl md:text-6xl font-black tracking-tight">Who am I?</h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div className="flex flex-col lg:flex-row gap-16 items-start justify-between">
                     {/* Text content */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 w-full lg:w-7/12">
                         <motion.p variants={itemVariants} className="text-slate-300 text-xl leading-relaxed">
                             I'm <strong className="text-white font-bold">Dhiliban Raja</strong>, a Computer Science undergraduate
                             with hands-on experience building full-stack web applications using React.js, Node.js, and Firebase.
@@ -87,7 +87,7 @@ export default function About() {
                     {/* Stats grid */}
                     <motion.div
                         variants={containerVariants}
-                        className="grid grid-cols-2 gap-4"
+                        className="grid grid-cols-2 gap-6 w-full lg:w-5/12"
                     >
                         {STATS.map(({ value, label }, i) => (
                             <motion.div

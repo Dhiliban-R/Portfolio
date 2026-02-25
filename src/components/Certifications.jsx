@@ -63,7 +63,7 @@ export default function Certifications() {
                 ref={ref}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
-                className="max-w-6xl mx-auto"
+                className="max-w-[1400px] mx-auto px-8 md:px-12"
             >
                 <motion.div variants={cardVariants} className="mb-16">
                     <span className="section-label mb-3 block">04 — Certifications</span>
@@ -75,7 +75,7 @@ export default function Certifications() {
 
                 <motion.div
                     variants={containerVariants}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
                 >
                     {CERTS.map((cert) => (
                         <motion.div

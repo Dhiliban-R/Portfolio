@@ -51,7 +51,7 @@ export default function Footer() {
                 }}
             />
 
-            <div className="max-w-6xl mx-auto text-center relative z-10">
+            <div className="max-w-[1400px] mx-auto text-center relative z-10 px-8 md:px-12">
                 {/* Auto-typing message */}
                 <div className="glass-card py-8 px-6 md:px-12 mb-10 relative overflow-hidden">
                     <div

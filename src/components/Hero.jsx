@@ -155,9 +155,9 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-24 pb-16">
+            <div className="max-w-[1400px] mx-auto px-8 md:px-12 w-full flex flex-col lg:flex-row justify-between items-center gap-16 pt-24 pb-16">
                 {/* Text content */}
-                <motion.div style={{ y, opacity }} className="relative z-10">
+                <motion.div style={{ y, opacity }} className="relative z-10 w-full lg:w-1/2">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -256,7 +256,7 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                    className="flex justify-center lg:justify-end relative"
+                    className="flex justify-center lg:justify-end relative w-full lg:w-1/2"
                 >
                     <div className="relative w-72 h-72 md:w-96 md:h-96 animate-floating">
                         {/* Outer glow rings */}
