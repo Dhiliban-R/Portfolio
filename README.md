@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/favicon.svg" alt="Logo" width="80" height="80">
+  <img src="public/vite.svg" alt="Logo" width="80" height="80">
   <h1 align="center">Modern Developer Portfolio & AI Chatbot</h1>
 
   <p align="center">
@@ -47,14 +47,16 @@ At the core of this portfolio is **Arthur 😎**, a custom-built AI chatbot that
 
 ### Client
 
-* **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) + Custom CSS
 - **Animation**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: Hand-crafted SVGs + Heroicons
 
 ### Server
 
-* **Runtime**: [Node.js](https://nodejs.org/)
+- **Runtime**: [Node.js](https://nodejs.org/)
+
 - **Framework**: Express.js
 - **AI Inference**: [Groq SDK](https://groq.com/)
 - **Integrations**: `node-telegram-bot-api`, `resend`
@@ -65,7 +67,8 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-* Node.js (v18+ recommended)
+- Node.js (v18+ recommended)
+
 - A Groq API Key
 - A Telegram Bot Token & Chat ID
 - A Resend API Key
