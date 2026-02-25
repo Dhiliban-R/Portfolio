@@ -71,7 +71,7 @@ function GeometricAvatar({ primaryColor }) {
     );
 }
 
-const WORDS = ['Full-Stack Developer', 'NSS Incharge', 'B.E. CSE @ GCE Salem', 'React & Node.js', 'Problem Solver'];
+const WORDS = ['Full-Stack Developer', 'React & Node.js Specialist', 'Web3 Implementer', 'Problem Solver'];
 
 function TypingText() {
     const wordRef = useRef(null);
@@ -201,8 +201,7 @@ export default function Hero() {
                         transition={{ duration: 0.6, delay: 0.65 }}
                         className="text-slate-400 text-lg leading-relaxed mb-10 max-w-lg"
                     >
-                        Building full-stack web apps with React.js, Node.js, and Firebase.
-                        B.E. CSE @ GCE Salem — turning ideas into production-ready code. 🚀
+                        Full-Stack Developer specializing in React, Node.js & Web3 — building scalable, production-ready applications.
                     </motion.p>
 
                     <motion.div

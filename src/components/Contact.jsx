@@ -64,7 +64,7 @@ export default function Contact() {
                     <span className="section-label mb-3 block">05 — Contact</span>
                     <h2 className="text-5xl md:text-6xl font-black tracking-tight">Let's Connect</h2>
                     <p className="text-slate-300 mt-5 text-lg max-w-lg leading-relaxed">
-                        Got a project in mind? Want to collaborate? Or just say hi? I'm all ears. 👂
+                        Open for opportunities. Let's discuss how my engineering skills can bring value to your team.
                     </p>
                 </motion.div>
 
@@ -96,15 +96,6 @@ export default function Contact() {
                                 <span className="ml-auto text-slate-600 group-hover:text-slate-300 transition-colors text-lg">↗</span>
                             </motion.a>
                         ))}
-
-                        <motion.div variants={itemVariants} className="glass-card p-6 mt-6">
-                            <p className="text-sm text-slate-400 leading-relaxed">
-                                Or try chatting with{' '}
-                                <strong style={{ color: primaryColor }}>Arthur 😎</strong>{' '}
-                                — my AI buddy who knows everything about me!
-                                Click the panel on the right →
-                            </p>
-                        </motion.div>
                     </motion.div>
 
                     {/* Contact form */}

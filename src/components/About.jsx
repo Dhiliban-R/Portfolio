@@ -15,7 +15,7 @@ const STATS = [
     { value: '3+', label: 'Projects Built' },
     { value: '2+', label: 'Internships' },
     { value: '3', label: 'Certifications' },
-    { value: '7.0', label: 'CGPA' },
+    { value: 'AI', label: 'Workflow' },
 ];
 
 export default function About() {
@@ -50,17 +50,16 @@ export default function About() {
                     {/* Text content */}
                     <div className="space-y-6 w-full lg:w-7/12">
                         <motion.p variants={itemVariants} className="text-slate-300 text-xl leading-relaxed">
-                            I'm <strong className="text-white font-bold">Dhiliban Raja</strong>, a Computer Science undergraduate
-                            with hands-on experience building full-stack web applications using React.js, Node.js, and Firebase.
+                            I am a <strong className="text-white font-bold">Full-Stack Developer</strong> specializing in building comprehensive web applications using React.js, Node.js, and Firebase.
                         </motion.p>
                         <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
-                            Currently pursuing my B.E. in CSE at <span style={{ color: primaryColor }} className="font-bold transition-colors duration-500">Government College of Engineering, Salem</span> (CGPA: 7.0/10.0). I'm a Linux power user — daily driving Arch and Fedora, and recently built my own system environment using Arch Linux with Hyprland from scratch.
+                            Currently pursuing my B.E. in Computer Science at <span style={{ color: primaryColor }} className="font-bold transition-colors duration-500">Government College of Engineering, Salem</span>. I focus on developing scalable architecture and writing clean, maintainable code for production environments.
                         </motion.p>
                         <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
-                            Beyond full-stack development, I am heavily proficient in utilizing AI tools to accelerate my daily workflow. Currently, I'm diving deep into <strong className="text-white">Rust</strong> to master memory management (stacks/heaps) and achieve better computing performance compared to C.
+                            My development workflow is heavily augmented by AI tooling, leveraging platforms like <strong className="text-white">Cursor, GitHub Copilot, and Claude/Groq LLMs</strong> to drastically accelerate prototyping and debugging. Concurrently, protecting execution performance is a priority; I am migrating learning focus toward <strong className="text-white">Rust</strong> for memory-safe systems engineering.
                         </motion.p>
                         <motion.p variants={itemVariants} className="text-slate-300 text-lg leading-relaxed">
-                            I also serve as <strong className="text-white">NSS Incharge</strong> — leading community initiatives. When I'm free, you'll find me exploring Web3, tweaking my dotfiles, or debating with my chatbot Arthur 😎.
+                            <strong className="text-white">Beyond the Code:</strong> I possess deep systems knowledge through daily-driving custom Linux environments (Arch/Hyprland), demonstrating strong OS-level troubleshooting capabilities. I also exercise leadership and event management through my role as an active NSS Incharge.
                         </motion.p>
 
                         {/* Links */}
