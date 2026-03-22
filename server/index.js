@@ -1,6 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
 dotenv.config();
 
 import chatRouter from './routes/chat.js';
@@ -26,16 +30,24 @@ app.use('/send-email', emailRouter);
 app.get('/health', (req, res) => {
     res.json({
         status: 'ok',
+<<<<<<< HEAD
         service: 'Arthur 😎 Backend v2',
+=======
+        service: 'Arthur 😎 Backend',
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
         uptime: process.uptime(),
     });
 });
 
 // Set up Telegram callback handler for email button
+<<<<<<< HEAD
 setupCallbackHandler(async (email, name) => {
     console.log(`Sending follow-up to ${name} <${email}>`);
     return await sendFollowUpEmail(email, name);
 });
+=======
+setupCallbackHandler(sendFollowUpEmail);
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
 
 // Start server
 app.listen(PORT, () => {

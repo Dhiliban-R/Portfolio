@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "arthur-portfolio-v2",
+=======
+  "name": "dhiliban-portfolio",
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@tailwindcss/vite": "^4.2.1",
     "framer-motion": "^12.35.2",
     "lucide-react": "^0.577.0",
@@ -20,6 +25,18 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+=======
+    "@heroicons/react": "^2.2.0",
+    "framer-motion": "^12.34.3",
+    "playwright": "^1.58.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-scroll": "^1.9.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/vite": "^4.2.1",
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
@@ -27,6 +44,10 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+<<<<<<< HEAD
+=======
+    "tailwindcss": "^4.2.1",
+>>>>>>> d1e5d6de0499b1145bc1811f366b5315801d1d3c
     "vite": "^7.3.1"
   }
 }
